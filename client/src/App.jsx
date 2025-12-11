@@ -61,7 +61,7 @@ export default function App() {
       </ScrollReveal>
 
       {/* PORTFOLIO SECTION */}
-      <ScrollReveal id="portfolio">
+      <ScrollReveal id="portfolio" className="min-h-screen flex items-center">
         <div ref={portfolioRef} className="w-full">
           {showPortfolio && (
             <Suspense fallback={<SectionSkeleton label="Portfolio" />}>
@@ -72,7 +72,7 @@ export default function App() {
       </ScrollReveal>
 
       {/* CONTACT SECTION */}
-      <ScrollReveal id="contact">
+      <ScrollReveal id="contact" className="min-h-screen flex items-center">
         <div ref={contactRef} className="w-full">
           {showContact && (
             <Suspense fallback={<SectionSkeleton label="Contact section" />}>
